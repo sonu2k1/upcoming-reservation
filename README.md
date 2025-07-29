@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Upcoming Reservations Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive React component for displaying and managing upcoming restaurant reservations.
+
+## Features
+
+- **Responsive Design**: Optimized for desktop (1200px) and mobile (375px) viewports
+- **Interactive Cards**: Each reservation displays venue name, date, time, and party size
+- **Status Indicators**: Visual badges for reservation status (Confirmed/Pending)
+- **Cancel Functionality**: Cancel button logs reservation ID to console
+- **Modern UI**: Clean, professional design with hover effects
+
+## Tech Stack
+
+- React 18
+- CSS3 (No external frameworks)
+- Modern ES6+ JavaScript
+
+## Installation & Setup
+
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn package manager
+
+### Steps to Run Locally
+
+1. **Clone the repository**
+git clone [your-repository-url]
+cd upcoming-reservations
+
+text
+
+2. **Install dependencies**
+npm install
+
+text
+
+3. **Start the development server**
+npm start
+
+text
+
+4. **Open your browser**
+Navigate to [http://localhost:3000](http://localhost:3000)
+
+The application will automatically reload when you make changes to the source code.
+
+## Project Structure
+
+upcoming-reservations/
+├── public/
+│ ├── index.html
+│ └── ...
+├── src/
+│ ├── components/
+│ │ ├── UpcomingReservations.js
+│ │ └── UpcomingReservations.css
+│ ├── App.js
+│ ├── App.css
+│ └── index.js
+├── package.json
+└── README.md
+
+text
+
+## Component Features
+
+### Data Structure
+The component uses static JSON data with the following structure:
+- `id`: Unique identifier
+- `venueName`: Restaurant name
+- `date`: Reservation date (YYYY-MM-DD)
+- `time`: Reservation time (HH:MM)
+- `partySize`: Number of guests
+- `status`: Reservation status (Confirmed/Pending)
+
+### Responsive Breakpoints
+- **Desktop**: 1200px and above (3-column grid)
+- **Tablet**: 768px - 1199px (2-column grid)
+- **Mobile**: 375px - 767px (1-column grid)
+- **Small Mobile**: Below 375px (optimized single column)
+
+### Functionality
+- **Date Formatting**: Displays dates in readable format (e.g., "Monday, August 15, 2024")
+- **Time Formatting**: Shows time in 12-hour format with AM/PM
+- **Cancel Action**: Clicking "Cancel Reservation" logs the reservation ID to browser console
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start`: Runs the app in development mode
+- `npm test`: Launches the test runner
+- `npm run build`: Builds the app for production
+- `npm run eject`: Ejects from Create React App (not recommended)
 
-### `npm start`
+## Browser Support
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contributing
 
-### `npm test`
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
