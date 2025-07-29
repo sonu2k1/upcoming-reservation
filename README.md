@@ -31,12 +31,14 @@ cd upcoming-reservations
 text
 
 2. **Install dependencies**
-npm install
+   
+`npm install`
 
 text
 
 3. **Start the development server**
-npm start
+   
+`npm start`
 
 text
 
